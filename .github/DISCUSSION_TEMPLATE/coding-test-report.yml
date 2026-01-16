@@ -4,54 +4,64 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### 📝 오늘의 풀이 기록을 남겨주세요!
+        ## 🚀 코딩 테스트 풀이 보고서
+        ---
   - type: input
     id: solve_date
     attributes:
       label: "📅 풀이 날짜"
-      placeholder: "예: 2026년 1월 14일"
+      placeholder: "예: 2026년 1월 16일"
     validations:
       required: true
   - type: input
     id: problem_type
     attributes:
       label: "🏷️ 문제 유형"
-      placeholder: "예: 배열, 구현, 탐색"
+      placeholder: "예: 문자열, 구현"
   - type: dropdown
     id: difficulty
     attributes:
       label: "⭐️ 난이도"
       options:
-        - Bronze
-        - Silver
-        - Gold
+        - Bronze 5 ~ 1
+        - Silver 5 ~ 1
+        - Gold 5 ~ 1
         - Platinum
-        - Unknown
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: "---"
   - type: input
     id: code_link
     attributes:
       label: "🔗 풀이 코드 링크"
-      placeholder: "GitHub 파일 링크를 입력해주세요."
+      placeholder: "GitHub 파일 주소를 붙여넣으세요."
   - type: textarea
     id: code_block
     attributes:
       label: "💻 코드 본문"
-      description: "작성한 코드를 붙여넣어 주세요."
       render: javascript
+      placeholder: "const fs = require('fs'); ..."
   - type: textarea
     id: thinking_process
     attributes:
       label: "🧠 사고 과정"
-      placeholder: "1. 어떤 방식으로 접근했나요?\n2. 로직의 흐름은 어떤가요?"
+      value: |
+        1. 
+        2. 
   - type: textarea
     id: lessons_learned
     attributes:
       label: "✅ 몰랐던 부분 & 놓친 부분"
-      placeholder: "학습한 내용이나 실수했던 점을 적어주세요."
-  - type: textarea
+      value: |
+        - **학습 내용** : 
+        - **실수/해결** : 
+  - type: markdown
+    attributes:
+      value: "---"
+  - type: input
     id: performance
     attributes:
       label: "⏱️ 성능 기록 (메모리 / 시간 / 코드 길이)"
-      placeholder: "예: 9328 KB / 92 ms / 427 B"
+      placeholder: "예: 18908 KB / 120 ms / 196 B"
